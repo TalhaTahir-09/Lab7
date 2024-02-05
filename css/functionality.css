@@ -6,17 +6,17 @@
   height: 100%;
   z-index: -1;
   border-radius: 8px;
-  background-color: #5408c6;
+  background-color: var(--color-primary-purple);
   transition: all 0.2s ease;
 }
 .header-button::before {
-  background-image: linear-gradient(90deg, #3fdaed, #ea01ff);
+  background-image: var(--button-gradient);
 }
 .heading-line-2 {
-  background: -webkit-linear-gradient(360deg, #3fdaed, #6b6ac4);
+  background: var(--heading-gradient-1);
 }
 .heading-line-3 {
-  background: -webkit-linear-gradient(360deg, #7e79e6, #ea01ff);
+  background: var(--heading-gradient-2);
 }
 .project-view::before,
 .project-view::after {
@@ -33,15 +33,62 @@
   opacity: 0;
 }
 .project-view::before {
-    background: -webkit-linear-gradient(360deg, #7e79e6, #ea01ff);
+  background: -webkit-linear-gradient(
+    360deg,
+    var(--color-primary-light-purple),
+    var(--color-primary-hotpink)
+  );
 }
 .footer::after {
-    content: "";
-    position: absolute;
-    width: 120%;
-    transform: translateX(-10%);
-    background-color: #1c1c1c;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  width: 120%;
+  transform: translateX(-10%);
+  background-color: var(--fotter-color);
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.navbar-li::after {
+  content: "";
+  background-image: url(../assets/Images/icon-menu.svg);
+  width: 48px;
+  height: 48px;
+  display: block;
+  transition: all 0.25s ease;
+  position: relative;
+  z-index: 999;
+}
+.menu-nav:checked + .navbar-li::after {
+  background-image: url(../assets/Images/icon-close.12e68e7b.svg);
+}
+.menu-nav:checked + .navbar-li + .nav-menu {
+  display: flex;
+}
+.menu-nav:checked + .navbar-li + .nav-menu ul {
+  animation: fade 0.25s linear forwards;
+}
+.nav-menu a {
+  position: relative;
+  z-index: 999;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
   }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.seperator-left {
+  left: 0 !important;
+  z-index: 999 !important;
+}
+.seperator-right {
+  right: 0 !important;
+  left: unset !important;
+  z-index: 999 !important;
+}

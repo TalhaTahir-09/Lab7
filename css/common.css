@@ -1,3 +1,24 @@
+:root{
+  --color-border: #535353;
+  --color-body: #0b0b0b;
+  --fotter-color: #1c1c1c;
+  --color-primary-hotpink:#ea01ff;
+  --color-primary-purple:#5408c6;
+  --color-primary-light-purple: #6b6ac4;
+
+  --border-main: 0.5px solid #535353;
+
+  --gap-gutter-small: 1rem;
+  --gap-gutter-medium: 1.5rem;
+  --gap-gutter-large: 2rem;
+  
+  --button-gradient: linear-gradient(90deg, #3fdaed, #ea01ff);
+  --heading-gradient-1: -webkit-linear-gradient(#3fdaed, #6b6ac4);
+  --heading-gradient-2: -webkit-linear-gradient(#6b6ac4, #ea01ff);
+
+}
+
+
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
@@ -59,7 +80,7 @@
   color: white;
 }
 .gradient-text {
-    background: -webkit-linear-gradient(360deg, #3fdaed, #6b6ac4);
+    background: var(--heading-gradient-1);
     -webkit-text-fill-color: transparent;
     background-clip: text !important;
 }

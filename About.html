@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="pr-3">
+<html lang="en" class="pr-3 flex-center">
 
 <head>
     <meta charset="UTF-8" />
@@ -11,27 +11,39 @@
 
 <body class="position-relative">
     <div class="seperator-center position-absolute"></div>
+    <div class="seperator-left position-absolute"></div>
+    <div class="seperator-right position-absolute"></div>
     <!-- Navbar -->
     <header>
-        <div class="nav-container grid">
-            <nav class="nav flex-space-between ">
-                <div class="logo">
-                    <img src="assets/Images/lab7-logo.svg" alt="" />
+        <nav class="nav flex-space-between ">
+            <div class="logo">
+                <img src="assets/Images/lab7-logo.svg" alt="" />
+            </div>
+            <ul>
+                <label for="menu-nav">
+                <input type="checkbox" class="menu-nav" id="menu-nav">
+                <li class="navbar-li">
+                    <a href=""></a>
+                </li>
+                <div class="nav-menu flex-center display-none">
+                    <div class="seperator-center seperator-center-menu-nav"></div>
+                    <ul class="nav-ul flex-center">
+                        <li class="nav-li color-white"><a class="color-white font-weight-700 font-questrial h-4 color-white" href="index.html"><span class="small">01. </span>Home</a></li>
+                        <li class="nav-li color-white"><a class="color-white font-weight-700 font-questrial h-4 color-white" href="work.html"><span class="small">02. </span>Work</a></li>
+                        <li class="nav-li color-white"><a class="color-white font-weight-700 font-questrial h-4 color-white" href="Contact.html"><span class="small">03. </span>Contact</a></li>
+                        <li class="nav-li color-white"><a class="color-white font-weight-700 font-questrial h-4 color-white" href="About.html"><span class="small">04. </span>About</a></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li class="navbar-li">
-
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            </label>
+            </ul>
+        </nav>
         <!-- Header -->
         <div class="mt-5">
             <div class="heading font-playfair font-weight-700 color-white h-3">
                 About Us
             </div>
             <div class="para mt-3 color-white font-questrial para-1 pr-5">
-                We are a UI/UX design agency specializing in creating user interfaces and user experiences for digital 
+                We are a UI/UX design agency specializing in creating user interfaces and user experiences for digital
                 products, such as websites, mobile apps, and web apps.<br>
                 It is our goal to create interfaces that are aesthetically pleasing, intuitive, and effective by using a
                 combination of design skills and user research. <br><br>
@@ -65,34 +77,189 @@
                     Web Disgn
                 </div>
                 <div class="card-para font-questrial para-1">
-                    Approaching modern website design, relying on the principles of design thinking. We design a modern, clean and unique web design. 
+                    Approaching modern website design, relying on the principles of design thinking. We design a modern,
+                    clean and unique web design.
                 </div>
             </div>
             <div class="card grid">
                 <img src="assets/Images/icon-app-design.svg" class="service-card-svg" style="width: 50px;">
                 <div class="card-title font-questrial font-weight-700 h-4 color-white ">
-                    App Design 
+                    App Design
                 </div>
                 <div class="card-para font-questrial para-1">
-                    Mobile application design is in line with the latest trends. We can help you create a visually appealing design Android and iOS app.                 </div>
+                    Mobile application design is in line with the latest trends. We can help you create a visually
+                    appealing design Android and iOS app. </div>
             </div>
             <div class="card grid">
                 <img src="assets/Images/icon-web-app-design.svg" class="service-card-svg">
                 <div class="card-title font-questrial font-weight-700 h-4 color-white ">
-                    Web App Design 
+                    Web App Design
                 </div>
                 <div class="card-para font-questrial para-1">
-                    Web app design services that focus both on solving business problems and meeting user needs. 
+                    Web app design services that focus both on solving business problems and meeting user needs.
                 </div>
             </div>
         </div>
     </section>
     <!-- Awwards -->
-    <section class="awwards-section">
-        
+    <section class="awwards-section mt-5">
+        <div class="awards-title font-playfair h-3 color-white">
+            Nominee & Awards
+        </div>
+        <div class="award-cards font-questrial color-white ">
+            <div class="card">
+                <div class="card-year color-white font-weight-700 color-white mt-3 mb-1 para-1">
+                    2023
+                </div>
+                <div class="flex mb-1 card-achivements">
+                    <div class="content">
+                        <div class="company color-white font-questrial font-weight-700 para-1">
+                            Innovation in Business MarTech Awards
+                        </div>
+                        <div class="achivement font-questrial para-1">
+                            Best Web & App Design Agency
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="company color-white font-questrial font-weight-700 para-1">
+                            Business Excellence Awards
+                        </div>
+                        <div class="achivement font-questrial para-1">
+                            UI Designer of the Year
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="company color-white font-questrial font-weight-700 para-1">
+                            Manifest Award </div>
+                        <div class="achivement font-questrial para-1">
+                            Best Web & App Design Agency
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal-seperator mb-1 mt-3"></div>
+            <div class="card">
+                <div class="card-year color-white font-weight-700 color-white mt-3 mb-1 para-1">
+                    2022
+                </div>
+                <div class="flex mb-1 card-achivements">
+                    <div class="content">
+                        <div class="company color-white font-questrial font-weight-700 para-1">
+                            CSSDA
+                        </div>
+                        <div class="achivement font-questrial para-1">
+                            Special Kudos (UI,UX,INN)
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="company color-white font-questrial font-weight-700 para-1">
+                            Best CSS
+                        </div>
+                        <div class="achivement font-questrial para-1">
+                            Site of the Day
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="company color-white font-questrial font-weight-700 para-1">
+                            CSS Light
+
+                        </div>
+                        <div class="achivement font-questrial para-1">
+                            Featured of the Day
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="company color-white font-questrial font-weight-700 para-1">
+                            Design Nominees
+                        </div>
+                        <div class="achivement font-questrial para-1">
+                            Site of the Day
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal-seperator mb-1 mt-3"></div>
+            <div class="card">
+                <div class="card-year color-white font-weight-700 color-white mt-3 mb-1 para-1">
+                    2021
+                </div>
+                <div class="flex mb-1 card-achivements">
+                    <div class="content">
+                        <div class="company color-white font-questrial font-weight-700 para-1">
+                            Corporate Vision, Technology Innovator Awards
+                        </div>
+                        <div class="achivement font-questrial para-1">
+                            Designer of the Year
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal-seperator mb-1 mt-3"></div>
+            <div class="card">
+                <div class="card-year color-white font-weight-700 color-white mt-3 mb-1 para-1">
+                    2020
+                </div>
+                <div class="flex mb-1 card-achivements">
+                    <div class="content">
+                        <div class="company color-white font-questrial font-weight-700 para-1">
+                            CorporateLiveWire, Croatia Prestige Awards
+                        </div>
+                        <div class="achivement font-questrial para-1">
+                            Winner
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="company color-white font-questrial font-weight-700 para-1">
+                            Clutch
+                        </div>
+                        <div class="achivement font-questrial para-1">
+                            Top B2B Companies, Croatia
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal-seperator mb-1 mt-3"></div>
+            <div class="card">
+                <div class="card-year color-white font-weight-700 color-white mt-3 mb-1 para-1">
+                    2019
+                </div>
+                <div class="flex mb-1 card-achivements">
+                    <div class="content">
+                        <div class="company color-white font-questrial font-weight-700 para-1">
+                            Design Nominees
+                        </div>
+                        <div class="achivement font-questrial para-1">
+                            Theme of the Day
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="company color-white font-questrial font-weight-700 para-1">
+                            Web Guru Awards
+                        </div>
+                        <div class="achivement font-questrial para-1">
+                            Guru of the Day
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="company color-white font-questrial font-weight-700 para-1">
+                            Guru of the Day
+                        </div>
+                        <div class="achivement font-questrial para-1">
+                            Site of the Day
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal-seperator mb-5 mt-3"></div>
+        </div>
     </section>
     <!-- Footer -->
     <footer class="footer position-relative pt-5">
+    <div class="seperator-center position-absolute" style="z-index: 1; top: 0;"></div>
         <div class="lets-work-together grid mt-5">
             <div class="heading h-4 color-white font-questrial">
                 Let's work together!

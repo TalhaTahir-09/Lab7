@@ -5,14 +5,17 @@ html {
 }
 body {
   min-height: 100vh;
-  background-color: #0b0b0b;
-  border-inline: 0.5px solid #535353;
+  background-color: var(--color-body);
   overflow-x: hidden;
   box-sizing: border-box;
+  max-width: 1400px;
+  width: 100%;
 }
 /* Navbar */
 .logo {
   width: 95px;
+  position: relative;
+  z-index: 999;
 }
 .nav-container {
   height: 165px;
@@ -20,16 +23,26 @@ body {
 .nav {
   margin-block: auto;
 }
-.navbar-li::after {
-  content: "";
-  background-image: url(../assets/Images/icon-menu.svg);
-  width: 48px;
-  height: 48px;
-  display: block;
-  transition: all 0.25s ease;
+
+.nav-menu {
+  width: 100%;
+  background-color: var(--color-body);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  z-index: 9;
+  height: 100%;
 }
-.menu-nav:checked + .navbar-li::after {
-  background-image: url(../assets/Images/icon-close.12e68e7b.svg);
+
+.nav-menu::before {
+  left: 2rem;
+}
+.nav-ul {
+  gap: var(--gap-gutter-large);
+}
+.small {
+  font-size: 60%;
 }
 /* Header */
 
@@ -55,10 +68,10 @@ body {
   width: max-content;
 }
 .project-content {
-  gap: 1rem;
+  gap: var(--gap-gutter-small);
 }
 .latest-work-projects {
-  grid-template-columns: 53.5% 1fr;
+  grid-template-columns: 53% 1fr;
   row-gap: 5rem;
 }
 .project-img {
@@ -67,44 +80,57 @@ body {
 .project-card:nth-child(even) {
   margin-top: 3rem;
 }
-
+.seperator-right,
+.seperator-left,
+.seperator-center-menu-nav,
 .seperator-center {
   width: 1px;
-  background-color: #535353c0;
+  background-color: var(--color-border);
   height: 100%;
-  margin-inline: 53%;
-  z-index: 1;
+  left: 53%;
+  z-index: -1;
+}
+.seperator-center-menu-nav {
+  position: absolute;
+  left: 52.25%;
 }
 .footer-ul {
-  gap: 2rem;
+  gap: var(--gap-gutter-large);
 }
 .footer {
-  background-color: #1c1c1c;
+  background-color: var(--fotter-color);
   height: 600px;
 }
 
 .lets-work-together {
-  gap: 2rem;
+  gap: var(--gap-gutter-large);
 }
+.horizontal-seperator,
 .seperatar-footer {
   width: 53%;
-  background-color: #535353c0;
+  background-color: var(--color-border);
   height: 1px;
 }
 
 /* About Page */
 .services-cards {
-  gap: 2rem;
+  gap: var(--gap-gutter-large);
 }
 .services-cards .card {
   flex: 1;
-  background-color: #1c1c1c;
-  border: 1px solid #3f3f3f;
+  background-color: var(--fotter-color);
+  border: var(--border-main);
   border-radius: 4px;
   padding: 2rem 1rem;
-  gap: 1rem;
+  gap: var(--gap-gutter-small);
   z-index: 1;
 }
 .service-card-svg {
   width: 70px;
+}
+.horizontal-seperator {
+  width: 100%;
+}
+.card-achivements {
+  gap: var(--gap-gutter-medium);
 }
