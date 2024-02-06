@@ -1,41 +1,76 @@
+:root{
+  --color-border: #535353;
+  --color-body: #0b0b0b;
+  --fotter-color: #1c1c1c;
+  --color-primary-hotpink:#ea01ff;
+  --color-primary-purple:#5408c6;
+  --color-primary-light-purple: #6b6ac4;
+
+  --border-main: 0.5px solid #535353;
+
+  --gap-gutter-small: 1rem;
+  --gap-gutter-medium: 1.5rem;
+  --gap-gutter-large: 2rem;
+  
+  --button-gradient: linear-gradient(90deg, #3fdaed, #ea01ff);
+  --heading-gradient-1: -webkit-linear-gradient(#3fdaed, #6b6ac4);
+  --heading-gradient-2: -webkit-linear-gradient(#6b6ac4, #ea01ff);
+
+}
+
+
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap");
-.h-1 {
-  font-size: 120px;
-  line-height: 139px;
+@font-face {
+  font-family: Questrial;
+  src: url(../assets/Fonts/Questrial/Questrial-Regular.ttf);
 }
 
-.h-2 {
-  font-size: 24px;
-  line-height: 32px;
+.font-questrial {
+  font-family: "Questrial", sans-serif;
+}
+.font-playfair {
+  font-family: "Playfair Display", serif;
+}
+.letter-spacing {
+  letter-spacing: -0.4rem;
+}
+.font-weight-600{
+    font-weight: 600;
+}
+.font-weight-700{
+    font-weight: 700;
+}
+.h-1 { font-size: 9.38vw; line-height: 1.17; }
+.h-2 { font-size: 21px; line-height: 1.71; }
+.h-3 { font-size: 4.06vw; line-height: 1.08; }
+.h-4 { font-size: 28px; line-height: 1.6; }
+.h-5 { font-size: 2.18vw; line-height: 1.65; }
+.para-1 { font-size: 19px; line-height: 1.89; }
+.p-2 { font-size: 16px; line-height: 1.92; }
+.btn-1 { font-size: 18px; line-height: 1; }
+
+@media screen and (max-width: 900px) {
+  .h-1 { font-size: 72px; line-height: 1.17; }
+  .h-2 { font-size: 21.6px; line-height: 1.71; }
+  .h-3 { font-size: 43.2px; line-height: 1.08; }
+  .h-4 { font-size: 28.8px; line-height: 1.6; }
+  .h-5 { font-size: 26.4px; line-height: 1.65; }
+  .para-1 { font-size: 19.2px; line-height: 1.89; }
+  .p-2 { font-size: 16.8px; line-height: 1.92; }
+  .btn-1 { font-size: 21.6px; line-height: 1; }
+  
 }
 
-.h-3 {
-  font-size: 52px;
-  line-height: 56px;
+.color-white {
+  color: white;
 }
-
-.h-4 {
-  font-size: 32px;
-  line-height: 40px;
+.gradient-text {
+    background: var(--heading-gradient-1);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text !important;
 }
-
-.p-1 {
-  font-size: 18px;
-  line-height: 28px;
-}
-
-.p-2 {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.btn-1 {
-  font-size: 18px;
-  line-height: 18px;
-}
-
 /* Utility Classes */
 .z-index-999 {
   z-index: 999;
@@ -136,6 +171,15 @@
 .display-none {
   display: none;
 }
+.width-50 {
+  width: 50%;
+}
+.width-100 {
+    width: 100%;
+  }
+  .overflow-x-hidden{
+    overflow-x: hidden;
+  }
 /* Margin Utility Classes */
 .m-1{margin:1rem;} .mt-1{margin-top:1rem;} .mb-1{margin-bottom:1rem;} .ml-1{margin-left:1rem;} .mr-1{margin-right:1rem;}
 .m-3{margin:3rem;} .mt-3{margin-top:3rem;} .mb-3{margin-bottom:3rem;} .ml-3{margin-left:3rem;} .mr-3{margin-right:3rem;}
@@ -148,4 +192,4 @@
 
 
 /* Reset */
-main{display:block;}body{margin:0;}p{margin:0;}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;margin:0;}ul,ol{margin:0;padding:0;list-style:none;}a{background-color:transparent;text-decoration:none;color:inherit;}svg,img{vertical-align:bottom;}button,input{-webkit-appearance:none;appearance:none;vertical-align:middle;color:inherit;font:inherit;background:transparent;padding:0;margin:0;border-radius:0;text-align:inherit;text-transform:inherit;}button,[type="button"],[type="reset"],[type="submit"]{cursor:pointer;}label[for]{cursor:pointer;}
+main{display:block;}body{margin:0; color: #BCBCBC;}p{margin:0;}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;margin:0;}ul,ol{margin:0;padding:0;list-style:none;}a{background-color:transparent;text-decoration:none;color:inherit;}svg,img{vertical-align:bottom;}button,input{-webkit-appearance:none;appearance:none;vertical-align:middle;color:inherit;font:inherit;background:transparent;padding:0;margin:0;border-radius:0;text-align:inherit;text-transform:inherit;}button,[type="button"],[type="reset"],[type="submit"]{cursor:pointer; border: none;}label[for]{cursor:pointer;}
