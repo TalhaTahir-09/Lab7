@@ -1,0 +1,136 @@
+@import url(common.css);
+@import url(functionality.css);
+html {
+  padding-left: 2rem;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--color-body);
+  overflow-x: hidden;
+  box-sizing: border-box;
+  max-width: 1400px;
+  width: 100%;
+}
+/* Navbar */
+.logo {
+  width: 95px;
+  position: relative;
+  z-index: 999;
+}
+.nav-container {
+  height: 165px;
+}
+.nav {
+  margin-block: auto;
+}
+
+.nav-menu {
+  width: 100%;
+  background-color: var(--color-body);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  z-index: 9;
+  height: 100%;
+}
+
+.nav-menu::before {
+  left: 2rem;
+}
+.nav-ul {
+  gap: var(--gap-gutter-large);
+}
+.small {
+  font-size: 60%;
+}
+/* Header */
+
+.heading-line-2,
+.heading-line-3 {
+  width: 500px;
+  display: inherit;
+  height: 150px;
+}
+.hero-visual {
+  width: 430px;
+}
+.header-button {
+  width: 255px;
+  height: 72px;
+  border-radius: 8px;
+}
+.header-button:hover::after {
+  opacity: 0;
+}
+/* Projects */
+.project-view {
+  width: max-content;
+}
+.project-content {
+  gap: var(--gap-gutter-small);
+}
+.latest-work-projects {
+  grid-template-columns: 53% 1fr;
+  row-gap: 5rem;
+}
+.project-img {
+  width: 580px;
+}
+.project-card:nth-child(even) {
+  margin-top: 3rem;
+}
+.seperator-right,
+.seperator-left,
+.seperator-center-menu-nav,
+.seperator-center {
+  width: 1px;
+  background-color: var(--color-border);
+  height: 100%;
+  left: 53%;
+  z-index: -1;
+}
+.seperator-center-menu-nav {
+  position: absolute;
+  left: 52.25%;
+}
+.footer-ul {
+  gap: var(--gap-gutter-large);
+}
+.footer {
+  background-color: var(--fotter-color);
+  height: 600px;
+}
+
+.lets-work-together {
+  gap: var(--gap-gutter-large);
+}
+.horizontal-seperator,
+.seperatar-footer {
+  width: 53%;
+  background-color: var(--color-border);
+  height: 1px;
+}
+
+/* About Page */
+.services-cards {
+  gap: var(--gap-gutter-large);
+}
+.services-cards .card {
+  flex: 1;
+  background-color: var(--fotter-color);
+  border: var(--border-main);
+  border-radius: 4px;
+  padding: 2rem 1rem;
+  gap: var(--gap-gutter-small);
+  z-index: 1;
+}
+.service-card-svg {
+  width: 70px;
+}
+.horizontal-seperator {
+  width: 100%;
+}
+.card-achivements {
+  gap: var(--gap-gutter-medium);
+}
