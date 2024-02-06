@@ -24,7 +24,7 @@
   position: absolute;
   height: 3px;
   background-color: white;
-  bottom: -3px;
+  bottom: 3px;
   width: 100%;
   left: 0;
   transition: all 0.25s ease;
@@ -38,16 +38,6 @@
     var(--color-primary-light-purple),
     var(--color-primary-hotpink)
   );
-}
-.footer::after {
-  content: "";
-  position: absolute;
-  width: 120%;
-  transform: translateX(-10%);
-  background-color: var(--fotter-color);
-  top: 0;
-  bottom: 0;
-  z-index: -1;
 }
 .navbar-li::after {
   content: "";

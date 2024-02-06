@@ -1,14 +1,20 @@
 @import url(common.css);
 @import url(functionality.css);
-html {
+.footer-container,
+.wrapper-div {
   padding-left: 2rem;
 }
-body {
+.layout-main {
   min-height: 100vh;
   background-color: var(--color-body);
   overflow-x: hidden;
   box-sizing: border-box;
   max-width: 1400px;
+  width: 100%;
+  z-index: 1;
+}
+body{
+  background-color: var(--color-body);
   width: 100%;
 }
 /* Navbar */
@@ -48,17 +54,19 @@ body {
 
 .heading-line-2,
 .heading-line-3 {
-  width: 500px;
-  display: inherit;
-  height: 150px;
+  display: flex;
+  height: min-content;
 }
 .hero-visual {
-  width: 430px;
+  width: 38vw;
 }
 .header-button {
   width: 255px;
   height: 72px;
   border-radius: 8px;
+}
+.header-para{
+  padding-right: 1rem;
 }
 .header-button:hover::after {
   opacity: 0;
@@ -73,9 +81,10 @@ body {
 .latest-work-projects {
   grid-template-columns: 53% 1fr;
   row-gap: 5rem;
+  column-gap: var(--gap-gutter-medium);
 }
 .project-img {
-  width: 580px;
+  width: 100%;
 }
 .project-card:nth-child(even) {
   margin-top: 3rem;
@@ -97,9 +106,14 @@ body {
 .footer-ul {
   gap: var(--gap-gutter-large);
 }
-.footer {
+.footer-container {
   background-color: var(--fotter-color);
   height: 600px;
+  overflow: hidden;
+}
+.footer{
+  border-inline: var(--border-main);
+  height: 100%;
 }
 
 .lets-work-together {
