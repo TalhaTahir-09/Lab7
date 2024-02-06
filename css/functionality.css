@@ -82,3 +82,12 @@
   left: unset !important;
   z-index: 999 !important;
 }
+.header-title-app::after{
+  content: "";
+  position: absolute;
+  background-image: var(--button-gradient);
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 5px;
+}

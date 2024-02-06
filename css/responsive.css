@@ -1,4 +1,5 @@
 @media screen and (max-width: 840px) {
+  .header-section-app,
   .wrapper-div,
   .footer-container {
     padding-inline: 0.5rem !important;
@@ -20,13 +21,27 @@
   .heading-line-3 {
     display: inline;
   }
-  .nav-ul{
+  .nav-ul {
     place-items: flex-start;
   }
-  .header-para-about{
+  .header-para-about {
     padding-right: 1rem;
   }
-  .card-achivements{
+  .card-achivements {
     flex-direction: column;
+  }
+  .seperator-right-menu-nav {
+    left: unset;
+    right: 0.41rem;
+  }
+  .seperator-left-menu-nav {
+    top: 148px;
+    left: 0.54rem;
+  }
+  .project-summary{
+    margin-right: 0;
+  }
+  .header-title-app{
+    font-size: 33px;
   }
 }
