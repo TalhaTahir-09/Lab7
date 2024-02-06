@@ -21,7 +21,10 @@
 
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@font-face {
+  font-family: Questrial;
+  src: url(../assets/Fonts/Questrial/Questrial-Regular.ttf);
+}
 
 .font-questrial {
   font-family: "Questrial", sans-serif;
@@ -35,7 +38,7 @@
 .font-weight-600{
     font-weight: 600;
 }
-.font-weight-700s{
+.font-weight-700{
     font-weight: 700;
 }
 .h-1 { font-size: 9.38vw; line-height: 1.17; }
