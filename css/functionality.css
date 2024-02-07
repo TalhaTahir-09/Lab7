@@ -1,3 +1,4 @@
+/* Buttons */
 .header-button::before,
 .header-button::after {
   content: "";
@@ -12,6 +13,9 @@
 .header-button::before {
   background-image: var(--button-gradient);
 }
+
+/* Gradients */
+
 .heading-line-2 {
   background: var(--heading-gradient-1);
 }
@@ -49,6 +53,8 @@
   position: relative;
   z-index: 999;
 }
+/* Checkboxes */
+
 .menu-nav:checked + .navbar-li::after {
   background-image: url(../assets/Images/icon-close.12e68e7b.svg);
 }
@@ -73,15 +79,7 @@
     transform: translateX(0);
   }
 }
-.seperator-left {
-  left: 0 !important;
-  z-index: 999 !important;
-}
-.seperator-right {
-  right: 0 !important;
-  left: unset !important;
-  z-index: 999 !important;
-}
+
 .header-title-app::after{
   content: "";
   position: absolute;

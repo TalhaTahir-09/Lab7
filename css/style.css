@@ -1,9 +1,11 @@
 @import url(common.css);
 @import url(functionality.css);
-.header-section-app,
-.footer-container,
-.wrapper-div {
-  padding-left: 2rem;
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  background-color: var(--color-body);
+  width: 100%;
 }
 .layout-main {
   background-color: var(--color-body);
@@ -13,9 +15,10 @@
   width: 100%;
   z-index: 1;
 }
-body {
-  background-color: var(--color-body);
-  width: 100%;
+.header-section-app,
+.footer-container,
+.wrapper-div {
+  padding-left: 2rem;
 }
 /* Navbar */
 .logo {
@@ -50,7 +53,7 @@ body {
 .small {
   font-size: 60%;
 }
-.nav-li a{
+.nav-li a {
   font-size: 37px;
 }
 /* Header */
@@ -92,31 +95,7 @@ body {
 .project-card:nth-child(even) {
   margin-top: 3rem;
 }
-.seperator-left-menu-nav,
-.seperator-right-menu-nav,
-.seperator-right,
-.seperator-left,
-.seperator-center-menu-nav,
-.seperator-center {
-  width: 1px;
-  background-color: var(--color-border);
-  height: 100%;
-  left: 53%;
-  z-index: -1;
-}
-.seperator-left-menu-nav,
-.seperator-right-menu-nav{
-  top: 148px;
-  left: 2.09rem;
-}
-.seperator-right-menu-nav{
-  left: unset;
-  right: 2.91rem;
-}
-.seperator-center-menu-nav {
-  position: absolute;
-  left: 52.25%;
-}
+
 .footer-ul {
   gap: var(--gap-gutter-large);
 }
@@ -135,12 +114,6 @@ body {
 .lets-work-together {
   gap: var(--gap-gutter-large);
 }
-.horizontal-seperator,
-.seperatar-footer {
-  width: 53%;
-  background-color: var(--color-border);
-  height: 1px;
-}
 
 /* About Page */
 .services-cards {
@@ -158,9 +131,7 @@ body {
 .service-card-svg {
   width: 70px;
 }
-.horizontal-seperator {
-  width: 100%;
-}
+
 .card-achivements {
   gap: var(--gap-gutter-medium);
 }
@@ -168,7 +139,7 @@ body {
   background-color: var(--fotter-color);
 }
 /* Project Pages */
-.project-tags-cont ul{
+.project-tags-cont ul {
   gap: 0.7rem;
 }
 .project-tags {
@@ -179,23 +150,67 @@ body {
   font-size: 16px;
   border-radius: 8px;
 }
-.figma-cont{
+.figma-cont {
   justify-content: flex-start;
   gap: var(--gap-gutter-small);
 }
-.figma-icon-li{
-  background-color: white;padding: 0.5rem 0.7rem;
+.figma-icon-li {
+  background-color: white;
+  padding: 0.5rem 0.7rem;
   border-radius: 8px;
 }
-.project-details{
+.project-details {
   background-color: var(--color-body);
 }
-.header-container-app{
+.header-container-app {
   max-width: 1400px;
   width: 100%;
   z-index: 0;
 }
-.project-summary{
+.project-summary {
   margin-right: 15rem;
 }
-
+/* Margins */
+.seperator-left-menu-nav,
+.seperator-right-menu-nav,
+.seperator-right,
+.seperator-left,
+.seperator-center-menu-nav,
+.seperator-center {
+  width: 1px;
+  background-color: var(--color-border);
+  height: 100%;
+  left: 53%;
+  z-index: -1;
+}
+.seperator-left-menu-nav,
+.seperator-right-menu-nav {
+  top: 148px;
+  left: 2.09rem;
+}
+.seperator-right-menu-nav {
+  left: unset;
+  right: 2.91rem;
+}
+.seperator-center-menu-nav {
+  position: absolute;
+  left: 52.25%;
+}
+.horizontal-seperator {
+  width: 100%;
+}
+.horizontal-seperator,
+.seperatar-footer {
+  width: 53%;
+  background-color: var(--color-border);
+  height: 1px;
+}
+.seperator-left {
+  left: 0 !important;
+  z-index: 999 !important;
+}
+.seperator-right {
+  right: 0 !important;
+  left: unset !important;
+  z-index: 999 !important;
+}
